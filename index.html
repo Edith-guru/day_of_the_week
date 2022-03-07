@@ -15,7 +15,8 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-
+	<!-- Javascript-->
+	<script src="script.js"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -67,27 +68,27 @@
 					</div>
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
-							<form>
+							<form id="form" name="form" onsubmit="findDay()">
 								<div class="form-group">
 									<span class="form-label">First Name</span>
-									<input class="form-control" type="text" placeholder="Enter first name...">
+									<input class="form-control" id="name"  type="text" placeholder="Enter first name">
 								</div>
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="form-group">
-											<span class="form-label">Birthdate</span>
-											<input class="form-control" type="date" required>
+											<span class="form-label">Birthday</span>
+											<input class="form-control" id="data-input" type="date" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="p-t-10">
                                         <label class="radio-container m-r-45">Female
-                                            <input type="radio" checked="checked" name="gender">
+                                            <input type="radio" checked="checked" name="gender" value="female">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container" style="color:black;">Male
-                                            <input type="radio" name="gender">
+                                            <input type="radio" name="gender" value="male">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>

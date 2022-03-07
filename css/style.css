@@ -106,8 +106,8 @@
 
 .booking-form .submit-btn {
 	display: inline-block;
-	color: #fff;
-	background-color: #f37b0b;
+	color: #000;
+	background-color:  #faa04b;
 	font-weight: 700;
 	padding: 14px 30px;
 	border-radius: 4px;
@@ -165,9 +165,9 @@ input[type='radio']:checked:after {
 	top: -2px;
 	left: -1px;
 	position: relative;
-	background-color: #f37b0b;
+	background-color: #faa04b;
 	content: '';
 	display: inline-block;
 	visibility: visible;
-	border: 2px solid #f37b0b;
+	border: 2px solid  #faa04b;
 }
