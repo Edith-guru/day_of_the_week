@@ -1,7 +1,6 @@
 # Akan Name
-### <iframe src="https://giphy.com/embed/m9ubLI4ES5wc6lP9v1" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Kyocera-DS-m9ubLI4ES5wc6lP9v1">via GIPHY</a></p>
-#### This is an Akan Name application
 
+#### This is an Akan Name application
 #### By **Edith Nekesa**
 
 ## Description
