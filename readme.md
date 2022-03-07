@@ -1,18 +1,12 @@
 # Portfolio-Landing-Page
 ### Hello! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
-#### This is my Portfolio, 2022
+#### This is an Akan Name application
 
 #### By **Edith Nekesa**
 
 ## Description
-I'm [Edith Nekesa](https://edith-guru.github.io/Portfolio-Landing-Page/) , this is my personal portfolio landing page website. It will show history of projects I have worked on, linkes to my Github,current applications I am undertaking and my CV.
-
-![![image portfolio](https://user-images.githubusercontent.com/32816069/155943000-b695b434-0b71-4e2c-85b4-b8ce5be135af.PNG)
-]
-![![image](https://user-images.githubusercontent.com/32816069/155944307-ff38b419-58c1-4ebd-9064-8d758ec977b8.png)
-]
-
-## Setup/Installation Requirements
+The Akan people [Edith Nekesa](https://edith-guru.github.io/Portfolio-Landing-Page/) of Ghana frequently name their children after the day of the week they were born and the order in which they were born. This web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+## BDD
 
 * _Open terminal or a similar app on your computer_
 * _change directory to Desktop_
@@ -25,14 +19,14 @@ I'm [Edith Nekesa](https://edith-guru.github.io/Portfolio-Landing-Page/) , this 
  _https://edith-guru.github.io/Portfolio-Landing-Page/_
  
 ## Known Bugs
-_insert something!sdvsfvsf_
+_insert something!_
 
 ## Technologies Used
 
 _HTML_
 _CSS_
 _Bootstrap_
-_PHP_
+_Javascipt_
 
 ## Support and contact details
 Do Reach out, [email](edithnesa@gmail.com) :)
