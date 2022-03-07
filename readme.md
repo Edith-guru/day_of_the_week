@@ -10,13 +10,13 @@ The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently 
 
 * _Open terminal or a similar app on your computer_
 * _change directory to Desktop_
-* _copy https://github.com/Edith-guru/Portfolio-Landing-Page.git
+* 
 * _use git clone and paste that link after it to clone the repository_
 * _open the folder it provides_
 * _open the HTML folder inside_
 
 ## Live Link
- _https://edith-guru.github.io/Portfolio-Landing-Page/_
+
  
 ## Known Bugs
 _insert something!_
