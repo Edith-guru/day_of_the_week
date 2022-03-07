@@ -136,6 +136,7 @@
 .booking-cta p {
 	font-size: 16px;
 	color: #000;
+	font-weight: 490;
 }
 .m-r-45 {
 	margin-right: 30px;
@@ -149,10 +150,14 @@
 }
 .booking-ctb h2{
 	color: #000;
+	font-weight: 400;
 }
 .booking-ctb li{
 	color: #000;
+	font-weight: 400;
 }
+
+
 input[type='radio']:checked:after {
 	width: 15px;
 	height: 15px;
