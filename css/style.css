@@ -121,8 +121,8 @@
 }
 
 .booking-cta {
-	margin-top: 80px;
-	margin-bottom: 30px;
+	margin-top: 100px;
+	margin-bottom: 2px;
 }
 
 .booking-cta h1 {
@@ -142,3 +142,13 @@
 	margin-bottom: 30px;
 	color: #000;
   }
+.booking-ctb{
+	margin-top: 6px;
+	margin-bottom: 2px;
+}
+.booking-ctb h2{
+	color: #000;
+}
+.booking-ctb li{
+	color: #000;
+}
