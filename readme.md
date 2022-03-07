@@ -1,11 +1,11 @@
-# Portfolio-Landing-Page
-### Hello! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+# Akan Name
+### Hello! <iframe src="https://giphy.com/embed/m9ubLI4ES5wc6lP9v1" width="24px" height="24px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Kyocera-DS-m9ubLI4ES5wc6lP9v1">via GIPHY</a></p> width="25px">
 #### This is an Akan Name application
 
 #### By **Edith Nekesa**
 
 ## Description
-The Akan people [Edith Nekesa](https://edith-guru.github.io/Portfolio-Landing-Page/) of Ghana frequently name their children after the day of the week they were born and the order in which they were born. This web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently name their children after the day of the week they were born and the order in which they were born. This web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
 ## BDD
 
 * _Open terminal or a similar app on your computer_
