@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const male = {
     Sunday: Kwasi, 
     Monday: Kwadwo, 
@@ -17,4 +19,4 @@ const female = {
     Friday: Afua,
     Saturday: Ama,
 };
-
+}
