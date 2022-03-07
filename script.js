@@ -3,7 +3,7 @@ let maleName = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let cc, yy, mm, dd, gender;
 
 document.addEventListener('DOMContentLoaded', () => {
-akanDy = (yy, mm, dd, cc, gender) => {
+akanDay = (yy, mm, dd, cc, gender) => {
     //   declaring
     let day = document.getElementById("day-input").value;
     let dd = parseInt(day);
@@ -28,7 +28,7 @@ validation = () => {
         }
       }
         dayValidator = () => {
-        if (month === 2 && Number(year)%4 === 0) {
+        if (month === 2 && Number(year) % 4 === 0) {
           if (day > 28 || day < 1) {
             return false;
           } else if (month === 2 && day > 29) {
@@ -54,7 +54,7 @@ $(document).ready(() => {
         event.preventDefault();
         const gender = $("input:radio[name=gender]:checked").val();
         const name = document.querySelector('#name').value;
-        let result = akanDay(yy, mm, dd, cc, gender);
+        let result = akanDay(yy, mm, dd, cc, gender, name);
         alert( `Hi ${name}.Your akan name is: ${result} `);
 
         //refresh page
