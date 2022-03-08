@@ -1,4 +1,8 @@
-// akans main function
+document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelector('form').onsubmit = function() {
+        const name = document.querySelector('#name').value;
+    }
+});
 function computation(){
     // arrays declaration
     let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -18,13 +22,14 @@ function computation(){
     // computation
     let dayOfWeek=((((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day)%7);
     // validation
+    const name = document.querySelector('#name').value;
     if(day>0&&day<32){
         if(month>0&&month<13){
             if(gender=='male'){
                 let i=0;
                        for(i; i<=6;i++){
                            if(i==Math.floor(dayOfWeek)){
-                            alert("Your akan name is "+maleNames[i]);
+                            alert(`Hi ${name} your akan name is ${maleNames[i]}`);
                             location.reload();
         
                            }
@@ -34,7 +39,7 @@ function computation(){
             else{
                 for(i=0; i<=6;i++){
                     if(i==Math.floor(dayOfWeek)){
-                     alert("Your akan name is "+femaleNames[i]);
+                    alert(`Hi ${name} your akan name is ${femaleNames[i]}`);
                      location.reload();
 
         
@@ -43,19 +48,10 @@ function computation(){
             }
         }
         else{
-            alert("Invalid month entered");
+            alert("Invalid Month entered");
         }
     }
     else{
-        alert("Invalid day entered");
+        alert("Invalid Day entered");
     }
 }
-// $('#myForm')
-//     .ajaxForm({
-//         url : 'index.html',
-//         dataType : 'json',
-//         success : function (response) {
-//             alert("The server says: " + response);
-//         }
-//     })
-// ;
