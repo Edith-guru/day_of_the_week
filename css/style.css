@@ -171,3 +171,30 @@ input[type='radio']:checked:after {
 	visibility: visible;
 	border: 2px solid  #faa04b;
 }
+#day{
+	margin-bottom: 7px;
+}
+#month{
+	margin-bottom: 7px;
+}
+#year{
+	margin-bottom: 7px;
+}
+p.copyright{
+	margin-top: 60px;
+	margin-left: 550px;
+
+}
+.akan-name {
+    padding-top: 40px;
+}
+
+.akan-name p {
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2em;
+}

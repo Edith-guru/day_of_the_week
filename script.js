@@ -1,138 +1,61 @@
-let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-let maleName = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-let cc, yy, mm, dd, gender;
+// akans main function
+function computation(){
+    // arrays declaration
+    let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    let femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    
+    // variables declaration
+    let day=parseInt(document.getElementById('day').value);
+    let month=parseInt(document.getElementById('month').value);
+    let fullyear=parseInt(document.getElementById('year').value);
+    let gender=document.getElementById('gender').value;
 
-document.addEventListener('DOMContentLoaded', () => {
-akanDay = (yy, mm, dd, cc, gender) => {
-    //   declaring
-    let day = document.getElementById("day-input").value;
-    let dd = parseInt(day);
-    let month = document.getElementById("month-input").value;
-    let mm = parseInt(month);
-    let year = document.getElementById("year-input").value;
-    let yy = parseInt(year.toString().slice(2, 4));
-    let cc = Math.ceil(year / 100);
-    let dayOfBirth = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
-    if (gender === "female") {
-        return dd && femaleName[dd.getDay()];
-    } else {
-        return dd && maleName[dd.getDay()];
+    // slice fullyear
+    let year1=fullyear.toString().slice(-2);
+    let year=parseInt(year1);
+
+    let century=Math.ceil((fullyear)/100)-1;
+    // computation
+    let dayOfWeek=((((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day)%7);
+    // validation
+    if(day>0&&day<32){
+        if(month>0&&month<13){
+            if(gender=='male'){
+                let i=0;
+                       for(i; i<=6;i++){
+                           if(i==Math.floor(dayOfWeek)){
+                            alert("Your akan name is "+maleNames[i]);
+                            location.reload();
+        
+                           }
+                       }                    
+            }
+              
+            else{
+                for(i=0; i<=6;i++){
+                    if(i==Math.floor(dayOfWeek)){
+                     alert("Your akan name is "+femaleNames[i]);
+                     location.reload();
+
+        
+                    }
+                }             
+            }
+        }
+        else{
+            alert("Invalid month entered");
+        }
+    }
+    else{
+        alert("Invalid day entered");
     }
 }
-validation = () => {
-        monthValidate = () => {
-        if (month < 1 || month > 12) {
-          return false;
-        } else {
-          return true;
-        }
-      }
-        dayValidator = () => {
-        if (month === 2 && Number(year) % 4 === 0) {
-          if (day > 28 || day < 1) {
-            return false;
-          } else if (month === 2 && day > 29) {
-            return false;
-          } else if (month === 2 && day < 1) {
-            return false;
-          } else {
-            return true;
-          }
-        } else if (day < 1 || day > 31){
-          return false;
-        } else {
-          return true;
-        }
-      }
-}
-});
-
-//front-end
-
-$(document).ready(() => {
-    $("form#form").submit(event => {
-        event.preventDefault();
-        const gender = $("input:radio[name=gender]:checked").val();
-        const name = document.querySelector('#name').value;
-        let result = akanDay(yy, mm, dd, cc, gender, name);
-        alert( `Hi ${name}.Your akan name is: ${result} `);
-
-        //refresh page
-        document.getElementById("form").reset();
-    });
-});
-
-
-// let CC, YY, MM, DD, d, dayValue;
-// document.addEventListener('DOMContentLoaded', () => {
-
-//     const male = {
-//         Sunday: Kwasi, 
-//         Monday: Kwadwo, 
-//         Tuesday: Kwabena, 
-//         Wednesday: Kwaku, 
-//         Thursday:  Yaw, 
-//         Friday: Kofi, 
-//         Saturday: Kwame
-//     };
-    
-//     const female = {
-//         Sunday: Akosua,
-//         Monday: Adwoa,
-//         Tuesday: Abenaa,
-//         Wednesday: Akua,
-//         Thursday:  Yaa,
-//         Friday: Afua,
-//         Saturday: Ama,
-//     };
-
-//     //Validation
-//     //month 
-//     monthValidate = () => {
-//         if (monthOfBirth < 1 || monthOfBirth > 12) {
-//           return false;
-//         } else {
-//           return true;
+// $('#myForm')
+//     .ajaxForm({
+//         url : 'index.html',
+//         dataType : 'json',
+//         success : function (response) {
+//             alert("The server says: " + response);
 //         }
-//       }
-
-//     if (nMonth >= 3) {
-//         nMonth -= 2;
-//       } else {
-//         nMonth += 10;
-//       }
-    
-//       if ((nMonth == 11) || (nMonth == 12)) nYear--;
-    
-//       let nCentury = parseInt(nYear / 100);
-//       let nYear100 = nYear % 100;
-//      // day of week number
-//       let h = 0; 
-//       h += parseInt(nDay);
-//       h += parseInt((13 / 5) * nMonth - 0.2);
-//       h += parseInt(nYear100);
-//       h += parseInt(nYear100 / 4);
-//       h += parseInt(nCentury / 4);
-//       h -= parseInt(2 * nCentury);
-//       h %= 7;
-    
-//       if (nYear >= 1700 && nYear <= 1751) {
-//         h -= 3;
-//       } else {
-//         if (nYear <= 1699) h -= 4;
-//       }
-    
-//       if (h < 0) h += 7;
-     
-
-
-// });
-
-
-    // (() => {
-    //       var date = new Date($('#date-input').val().slice("-"));
-    //       day = date.getDate();
-    //       month = date.getMonth() + 1;
-    //       year = date.getFullYear();
-    //     ;
-    //   })(); 
+//     })
+// ;
