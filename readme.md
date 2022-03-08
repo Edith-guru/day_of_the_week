@@ -2,8 +2,8 @@
 
 #### This is an Akan Name application
 #### By **Edith Nekesa**
-![![image](https://user-images.githubusercontent.com/32816069/157239815-29aef4aa-fa95-4f3f-8b74-39ba673c8cf2.png)
-]
+[![image](https://user-images.githubusercontent.com/32816069/157239815-29aef4aa-fa95-4f3f-8b74-39ba673c8cf2.png)
+
 
 ## Description
 The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently name their children after the day of the week they were born and the order in which they were born. This web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
