@@ -2,7 +2,7 @@
 
 #### This is an Akan Name application
 #### By **Edith Nekesa**
-[![image](https://user-images.githubusercontent.com/32816069/157239815-29aef4aa-fa95-4f3f-8b74-39ba673c8cf2.png)
+![image](https://user-images.githubusercontent.com/32816069/157239815-29aef4aa-fa95-4f3f-8b74-39ba673c8cf2.png)
 
 
 ## Description
