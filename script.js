@@ -9,36 +9,35 @@ function computation(){
     let femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     
     // variables declaration
-    let day=parseInt(document.getElementById('day').value);
-    let month=parseInt(document.getElementById('month').value);
+    let dd=parseInt(document.getElementById('day').value);
+    let mm=parseInt(document.getElementById('month').value);
     let fullyear=parseInt(document.getElementById('year').value);
     let gender=document.getElementById('gender').value;
 
     // slice fullyear
     let year1=fullyear.toString().slice(-2);
-    let year=parseInt(year1);
+    let yy=parseInt(year1);
 
-    let century=Math.ceil((fullyear)/100)-1;
+    let cc=Math.ceil((fullyear)/100)-1;
     // computation
-    let dayOfWeek=((((century/4)-2*century-1)+((5*year/4))+((26*(month+1)/10))+day)%7);
+    let dayOfWeek=((((cc / 4) - 2 * cc - 1) + (( 5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7);
     // validation
     const name = document.querySelector('#name').value;
-    if(day>0&&day<32){
-        if(month>0&&month<13){
-            if(gender=='male'){
-                let i=0;
-                       for(i; i<=6;i++){
-                           if(i==Math.floor(dayOfWeek)){
+    if(dd > 0 && dd <= 31){
+        if(mm > 0 && mm <= 12){
+            if(gender == 'male'){
+                let i = 0;
+                       for(i; i <= 6; i++ ){
+                           if(i == Math.floor(dayOfWeek)) {
                             alert(`Hi ${name} your akan name is ${maleNames[i]}`);
                             location.reload();
-        
                            }
                        }                    
             }
               
             else{
-                for(i=0; i<=6;i++){
-                    if(i==Math.floor(dayOfWeek)){
+                for(i = 0; i <= 6; i++ ){
+                    if(i == Math.floor(dayOfWeek)) {
                     alert(`Hi ${name} your akan name is ${femaleNames[i]}`);
                      location.reload();
 
