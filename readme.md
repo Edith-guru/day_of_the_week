@@ -2,7 +2,8 @@
 
 #### This is an Akan Name application
 #### By **Edith Nekesa**
-[image](https://user-images.githubusercontent.com/32816069/157239527-67f6090a-9105-4c35-bd7a-e123d91d3010.png)
+![![image](https://user-images.githubusercontent.com/32816069/157239815-29aef4aa-fa95-4f3f-8b74-39ba673c8cf2.png)
+]
 
 ## Description
 The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently name their children after the day of the week they were born and the order in which they were born. This web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
@@ -10,17 +11,13 @@ The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently 
 
 * _Open terminal or a similar app on your computer_
 * _change directory to Desktop_
-* 
+* _https://github.com/Edith-guru/ghanian-akan-name.git_
 * _use git clone and paste that link after it to clone the repository_
 * _open the folder it provides_
 * _open the HTML folder inside_
 
 ## Live Link
-<<<<<<< HEAD
-
-=======
  _https://edith-guru.github.io/ghanian-akan-name/_
->>>>>>> ba9a316c43cc8c9d0b81f061e207ab51628102bd
  
 ## Known Bugs
 _insert something!_
