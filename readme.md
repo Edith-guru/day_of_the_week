@@ -17,7 +17,7 @@ The [Akan people](https://en.wikipedia.org/wiki/Akan_names) of Ghana frequently 
 * _open the HTML folder inside_
 
 ## Live Link
- _https://edith-guru.github.io/ghanian-akan-name/_
+ _https://edith-nekesa.github.io/ghanian-akan-name/_
  
 ## Known Bugs
 _insert something!_
